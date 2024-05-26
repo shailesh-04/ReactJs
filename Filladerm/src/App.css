@@ -1,0 +1,238 @@
+html{
+  font-size: 10;
+  font-family: Sans-Serif;
+}
+body{
+  width: 100%;
+}
+section{
+   width: 100%;
+   height:100vh;
+   display: flex;
+   align-items: center;
+   justify-content:center;
+   /* scroll-snap-align: center;
+   scroll-snap-stop: always */
+}
+img{
+   max-width: 100%;
+}
+.header{
+   background:#2B637755;
+   width: 100%;
+   position:absolute;
+   top: 0;
+   left: 0;
+   padding:1rem 3rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.header .logo{
+   font-size: 1.6rem;
+   font-weight: 500;
+   letter-spacing: .2rem;
+   color: #fff;
+}
+.header .nav-bar a,.header .right a{
+   font-size: 1.7rem;
+   padding: .5rem 0;
+   height: 100%;
+   margin: 0 1rem;
+   color: #fff;
+}
+.home{
+   background-image: url('/img/Home-Background.jpg');
+   background-size: cover;
+   padding: 0 3rem;
+}
+.home-contact{
+}
+.home-contact .text-white{
+   font-size: 6.2rem;
+   color: white;
+   margin-bottom: 1.7rem;
+}
+.home-contact .text-transparent{
+   margin-bottom: 1.7rem;
+   font-size: 6.2rem;
+   color: transparent;
+   -webkit-text-stroke: 1px #eee;
+}
+.home-contact .content{
+   margin-bottom: 1.8rem;
+   font-size: 1.6rem;
+   font-weight: 400;
+   color: #fff;
+}
+.home-btn{
+   font-size: 2rem;
+   border: 1.7px solid #eee;
+   color: #eee;
+   padding: 1.4rem 8.5rem;
+   border-radius: .6rem;
+   display:inline-block;
+}
+.home-contact .social{
+   position: relative;
+   top: 5rem;
+   display: flex;
+   align-items: center;
+   color: #fff;
+   font-size: 1.4rem;
+}
+.home-contact .social .bx-current-location{
+   font-size: 2rem;
+   padding-right: 1.5rem;
+}
+.home-contact .social .icon{
+   font-size: 3rem;
+   padding: 1.5rem;
+   background: #dddddd66;
+   align-items: center;
+   justify-content: center;
+   border-radius: 1rem;
+}
+.home-contact .social .icon i{
+   margin: 0 .5rem;
+   background: #dddddd99;
+   padding: .5rem;
+   padding-bottom:.3rem;
+   border-radius: 50%;
+}
+.home-contact .home-btn{
+   background: #eee;
+   color: #2B6377;
+}
+.home-img{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 2rem;
+   padding: 5%;
+   background-image: url('../img/Background.png');
+   background-size:100% 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.home-img .product-img
+{
+   background: #fff;
+   padding: 3.5rem 2.5rem;
+   border-radius: 1rem;
+}
+.home-img .product-img h2{
+   text-align: center;
+}
+/* =================Hear categories Section Desine============ */
+.head{
+   font-size: 3rem;
+}
+.categories{
+   position: relative;
+   flex-direction: column;
+   gap: 4rem;
+}
+.categories .categories-box{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   gap: 3rem;
+}
+.categories .categories-box div{
+   box-shadow: 0 0 3px #ddd;
+   background: #fff;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 1rem;
+   padding: 2rem;
+   width: 26%;
+}
+.categories .categories-box div .btn{
+   background: transparent;
+   border: .1rem solid #2B6377;
+   color:#2B6377;
+   padding: 1.5rem 5rem;
+   border-radius: 1rem;
+   font-size: 1.7rem;
+   font-weight: 500;
+   transition: all .5s;
+}
+.categories .categories-box div .btn:hover{
+   background: #2B6377;
+   color: #eee;
+}
+.bg_cut{
+   width: 100%;
+   height: 31%;
+   position: absolute;
+   left:0;
+   z-index: -10;
+   bottom: 0;
+    background-image: url('/img/home_bg.jpg');
+   background-size: cover;
+   border-radius: 2.7rem 2.7rem 0 0;
+}
+
+/* ---- --- ---- ---BEAT SALLER--- ---- --- ---- --- */
+
+.bestsaller{
+   height: auto;
+   flex-direction: column;
+   background-image: url('/img/home_bg.jpg');
+   background-size: cover;
+   overflow-y: scroll;
+}
+.bestsaller .head{
+   letter-spacing: .1rem;
+   margin: 3rem 0;
+   color: #fff;
+}
+.bestsaller .allitem{
+   width: 95%;
+   display: flex;
+   align-items: center;
+   justify-content:flex-start;
+   gap: 1.9rem;
+   flex-wrap: wrap
+}
+.bestsaller .allitem > div{
+   margin: .5rem 0;
+   width: 27rem;
+   height: 37rem;
+   background: #fff;
+   border-radius: 1.2rem;
+   padding: 1rem;
+}
+.bestsaller .allitem > div .img-box {
+   height: 45%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.bestsaller .allitem > div .img-box > img{
+   max-height: 100%;
+}
+.bestsaller .allitem > div .propaty{
+   height:55%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.6rem;
+   line-height: 3rem;
+}
+.bestsaller .allitem div .propaty .btn{
+   padding: .5rem 2.5rem;
+   margin-top: 1rem;
+   border: .3rem solid #2B6377;
+   color: #2B6377;
+   border-radius: 1rem;
+   transition: all .4s;
+}
+.bestsaller .allitem div .propaty .btn:hover{
+   background: #2B6377;
+   color: #ddd;
+}
