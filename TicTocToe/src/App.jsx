@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import Portfolio from './CURD/main  ';
+import Portfolio from './Component/Game';
 function App() {
   return (
     <>

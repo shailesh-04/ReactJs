@@ -40,9 +40,6 @@ main > div > input{
 	position: absolute;
 	opacity: .1;
 }
-main > div > input:hover + label{
- 
-}
 label{
 	width: 90%;
 	height: 90%;
@@ -52,9 +49,7 @@ label{
 	font-size: 4rem;
 	color: #fff;
 }
-main > div > input:checked + label{
-	
-}
+
 input[type="reset"]{
 	padding: 1rem 6rem;
 	margin: 1rem auto;
